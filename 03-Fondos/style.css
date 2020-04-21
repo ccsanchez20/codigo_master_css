@@ -1,0 +1,27 @@
+body{
+    /*background: red;*/
+    background-image: url(./img/fondo1.jpeg);
+    background-repeat: repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-position: left bottom;
+}
+#caja{
+    background-color: green;
+    border: 3px solid black;
+    padding: 0px 10px;
+}
+h2{
+    background-color: rgb(160, 253, 147);
+    border: 3px solid black;
+}
+
+h2.con{
+    /*word-spacing: 15px;*/
+    letter-spacing: 15px;
+}
+
+h2.sin{
+    word-spacing: 15px;
+    /*letter-spacing: 15px;*/
+}

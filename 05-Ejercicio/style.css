@@ -1,0 +1,110 @@
+/*
+Ejercicio completo con HTML y CSS
+1. Crear documento HTML y vincularlo con CSS.
+2. Crear estructura HTML que cuente con: CONTENEDOR GENERAL, 
+   CABECERA, MENU, BARRA LATERAL, SECCION DE CONTENIDO 
+   PRINCIPAL, ELEMENTOS DENTRO DEL CONTENEDOR PRINCIPAL, FOOTER.
+3. Todo el contenido debe estar dentro del contenedor general 
+   y su ancho sera de 1200px y estar centrado.
+4. Header que ocupe todo el ancho y tener un texto grande centrado.
+5. Menu con elementos uno al lado del otro.
+6. El contenido principal debe tener un ancho del 70%.
+7. El contenido dentro del contenedor principal debe ser una cuadricula con 4 líneas de 2 cajas.
+8. La barra lateral debe tener un ancho del 30%.
+9. El footer debe tener un ancho del 100% del div que lo contiene y estar abajo del todo.
+*/
+
+/* EJERCICIO 3 */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+div#general{
+    background-color: red;
+    border: 1px solid black;
+    width: 1200px;
+    margin: 0px auto;
+}
+
+/* EJERCICIO 4 */
+#header{
+    background-color: rgb(0, 110, 255);
+    color: white;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+}
+
+/* EJERCICIO 5 */
+#menu{
+    background-color: rgb(172, 172, 172);
+    /*height: 50px;*/
+}
+#menu ul>li{
+    /*background-color: white;*/
+    display: inline-block;
+    padding: 15px;
+    margin-left: -6px;
+    border-right: 1px solid grey;
+}
+#menu ul>li>a{
+    /*background-color: white;*/
+    text-decoration: none;
+    padding: 15px;
+    color: rgb(36, 36, 36);
+}
+#menu ul>li:hover{
+    border-bottom: 2px solid white;
+    cursor: pointer;
+}
+#menu ul>li:hover>a{
+    color: rgb(255,255,255);
+}
+
+/* EJERCICIOS 6 Y 8 */
+#contenido{
+    background-color: rgb(0, 255, 34);
+    width: 69%;
+    float: left;
+}
+#lateral .caja{
+    background-color: rgb(0, 110, 255);;
+    width: 30%;
+    float: left;
+    min-height: 500px;
+    text-align: center;
+}
+#clearfix{
+    float: none;
+    clear: both;
+}
+
+#contenido h1{
+    border: 1px solid white;
+    text-align: center;
+    line-height:100px;
+    margin: 15px;
+}
+
+/* EJERCICIO 7 */
+#contenido .caja{
+    width: 40%;
+    height: 250px;
+    background-color: blueviolet;
+    border: 5px solid white;
+    margin: 20px;
+    margin-left: 40px;
+    float:left;
+}
+
+/* EJERCICIO 9 */
+#footer{
+    width: 100%;
+    background-color: #eee;
+    text-align: center;
+    color: #444;
+    height: 55px;
+    line-height: 55px;
+    border-top: 1px solid #ccc
+}
